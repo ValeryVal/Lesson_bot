@@ -103,6 +103,7 @@ def send_text(message):
         bot.send_photo(message.chat.id, random.choice(img))
     elif message.text == 'Хочу ще побажань':
         bot.send_message(message.chat.id, random.choice(wishes))
+        bot.send_message(message.chat.id, random.choice(wishes))
 
 bot.polling(none_stop=True)
 
